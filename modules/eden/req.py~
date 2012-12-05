@@ -3256,6 +3256,10 @@ def req_match():
     site_id = current.db(table.id == id).select(table.site_id,
                                                 limitby=(0, 1)
                                                 ).first().site_id
+#    for a in siteid:
+#	print type(a.site_id)
+#    	site_id = a.site_id
+
     actions = [
             dict(url = URL(c = "req",
                            f = "req",
